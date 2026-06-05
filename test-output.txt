@@ -1,0 +1,1206 @@
+
+> greentube-assignment@1.0.0 test
+> cucumber-js --config cucumber.config.js
+
+This Node.js version (v26.0.0) has not been tested with this version of Cucumber; it should work normally, but please raise an issue if you see anything unexpected.
+Cannot use 'progress-bar' formatter for output to 'stdout' as not a TTY. Switching to 'progress' formatter.
+.........U----..........U-U-......UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+
+Failures:
+
+1) Scenario: TC-API-02 - GET /pet/{id} - Retrieve the created pet and verify it matches POST data # features/api/petstore.feature:30
+   ✔ Before # src/support/hooks.ts:10
+   ✔ Given I have previously created a pet with name "Bruno" and status "available" # src/steps/petstore.steps.ts:38
+   ? When I send a GET request to "/pet/{id}" using the created pet's ID
+       Undefined. Implement with the following snippet:
+
+         When('I send a GET request to {string} using the created pet\'s ID', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   - Then the response status code should be 200 # src/steps/petstore.steps.ts:131
+   - And the response body pet name should match "Bruno" # src/steps/petstore.steps.ts:155
+   - And the response body pet status should match "available" # src/steps/petstore.steps.ts:163
+   - And the response body pet ID should match the one returned by POST # src/steps/petstore.steps.ts:171
+   ✔ After # src/support/hooks.ts:16
+
+2) Scenario: TC-API-04 - DELETE /pet/{id} - Delete pet and verify it no longer exists # features/api/petstore.feature:49
+   ✔ Before # src/support/hooks.ts:10
+   ✔ Given I have previously created a pet with name "Bruno" and status "available" # src/steps/petstore.steps.ts:38
+   ? When I send a DELETE request to "/pet/{id}" using the created pet's ID
+       Undefined. Implement with the following snippet:
+
+         When('I send a DELETE request to {string} using the created pet\'s ID', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   - Then the response status code should be 200 # src/steps/petstore.steps.ts:131
+   ? When I send a GET request to "/pet/{id}" using the created pet's ID
+       Undefined. Implement with the following snippet:
+
+         When('I send a GET request to {string} using the created pet\'s ID', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   - Then the response status code should be 404 # src/steps/petstore.steps.ts:131
+   ✔ After # src/support/hooks.ts:16
+
+3) Scenario: TC-LOG-01 - Successful login with valid credentials # features/manual/login.feature:29
+   ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+       Undefined. Implement with the following snippet:
+
+         Given('the user is on the GameTwist homepage {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And a registered account exists with email "test.user@example.com" and password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         Given('a registered account exists with email {string} and password {string}', function (string, string2) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks on the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         Given('the user clicks on the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? When the user enters the email "test.user@example.com"
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the email {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user enters the password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the password {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         When('the user clicks the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then the user should be redirected to the GameTwist dashboard
+       Undefined. Implement with the following snippet:
+
+         Then('the user should be redirected to the GameTwist dashboard', function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user's username should be visible in the navigation bar
+       Undefined. Implement with the following snippet:
+
+         Then('the user\'s username should be visible in the navigation bar', function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user's coin balance should be displayed
+       Undefined. Implement with the following snippet:
+
+         Then('the user\'s coin balance should be displayed', function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+
+4) Scenario: TC-LOG-02 - Login attempt with incorrect password # features/manual/login.feature:42
+   ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+       Undefined. Implement with the following snippet:
+
+         Given('the user is on the GameTwist homepage {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And a registered account exists with email "test.user@example.com" and password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         Given('a registered account exists with email {string} and password {string}', function (string, string2) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks on the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         Given('the user clicks on the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? When the user enters the email "test.user@example.com"
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the email {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user enters an incorrect password "WrongPass99"
+       Undefined. Implement with the following snippet:
+
+         When('the user enters an incorrect password {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         When('the user clicks the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then an error message should be displayed saying "Invalid email or password"
+       Undefined. Implement with the following snippet:
+
+         Then('an error message should be displayed saying {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user should remain on the login page
+       Undefined. Implement with the following snippet:
+
+         Then('the user should remain on the login page', function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user should NOT be logged in
+       Undefined. Implement with the following snippet:
+
+         Then('the user should NOT be logged in', function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+
+5) Scenario: TC-LOG-03 - Login with missing or invalid fields # features/manual/login.feature:62
+   ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+       Undefined. Implement with the following snippet:
+
+         Given('the user is on the GameTwist homepage {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And a registered account exists with email "test.user@example.com" and password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         Given('a registered account exists with email {string} and password {string}', function (string, string2) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks on the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         Given('the user clicks on the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? When the user enters the email ""
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the email {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user enters the password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the password {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         When('the user clicks the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then an error message "Email is required" should be displayed
+       Undefined. Implement with the following snippet:
+
+         Then('an error message {string} should be displayed', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+
+6) Scenario: TC-LOG-03 - Login with missing or invalid fields # features/manual/login.feature:63
+   ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+       Undefined. Implement with the following snippet:
+
+         Given('the user is on the GameTwist homepage {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And a registered account exists with email "test.user@example.com" and password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         Given('a registered account exists with email {string} and password {string}', function (string, string2) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks on the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         Given('the user clicks on the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? When the user enters the email "test.user@example.com"
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the email {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user enters the password ""
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the password {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         When('the user clicks the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then an error message "Password is required" should be displayed
+       Undefined. Implement with the following snippet:
+
+         Then('an error message {string} should be displayed', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+
+7) Scenario: TC-LOG-03 - Login with missing or invalid fields # features/manual/login.feature:64
+   ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+       Undefined. Implement with the following snippet:
+
+         Given('the user is on the GameTwist homepage {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And a registered account exists with email "test.user@example.com" and password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         Given('a registered account exists with email {string} and password {string}', function (string, string2) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks on the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         Given('the user clicks on the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? When the user enters the email ""
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the email {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user enters the password ""
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the password {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         When('the user clicks the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then an error message "Email and password are required" should be displayed
+       Undefined. Implement with the following snippet:
+
+         Then('an error message {string} should be displayed', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+
+8) Scenario: TC-LOG-03 - Login with missing or invalid fields # features/manual/login.feature:65
+   ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+       Undefined. Implement with the following snippet:
+
+         Given('the user is on the GameTwist homepage {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And a registered account exists with email "test.user@example.com" and password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         Given('a registered account exists with email {string} and password {string}', function (string, string2) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks on the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         Given('the user clicks on the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? When the user enters the email "not-a-valid-email"
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the email {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user enters the password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         When('the user enters the password {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         When('the user clicks the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then an error message "Please enter a valid email" should be displayed
+       Undefined. Implement with the following snippet:
+
+         Then('an error message {string} should be displayed', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+
+9) Scenario: TC-LOG-04 - Account locked after 5 consecutive failed login attempts # features/manual/login.feature:72
+   ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+       Undefined. Implement with the following snippet:
+
+         Given('the user is on the GameTwist homepage {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And a registered account exists with email "test.user@example.com" and password "ValidPass1"
+       Undefined. Implement with the following snippet:
+
+         Given('a registered account exists with email {string} and password {string}', function (string, string2) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user clicks on the "Log In" button
+       Undefined. Implement with the following snippet:
+
+         Given('the user clicks on the {string} button', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? When the user attempts to log in with wrong credentials 5 times in a row
+       Undefined. Implement with the following snippet:
+
+         When('the user attempts to log in with wrong credentials {int} times in a row', function (int) {
+         // When('the user attempts to log in with wrong credentials {float} times in a row', function (float) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then the account should be temporarily locked
+       Undefined. Implement with the following snippet:
+
+         Then('the account should be temporarily locked', function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And an error message should be displayed saying "Your account has been temporarily locked due to too many failed attempts"
+       Undefined. Implement with the following snippet:
+
+         Then('an error message should be displayed saying {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And the user should be unable to log in even with correct credentials
+       Undefined. Implement with the following snippet:
+
+         Then('the user should be unable to log in even with correct credentials', function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? And a lockout notification email should be sent to "test.user@example.com"
+       Undefined. Implement with the following snippet:
+
+         Then('a lockout notification email should be sent to {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+
+10) Scenario: TC-LOG-05 - Password reset email sent for registered account # features/manual/login.feature:86
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And a registered account exists with email "test.user@example.com" and password "ValidPass1"
+        Undefined. Implement with the following snippet:
+
+          Given('a registered account exists with email {string} and password {string}', function (string, string2) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Log In" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user clicks the "Forgot Password?" link
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} link', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters the registered email "test.user@example.com"
+        Undefined. Implement with the following snippet:
+
+          When('the user enters the registered email {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Send Reset Link" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then a success message should be displayed saying "A password reset link has been sent to your email"
+        Undefined. Implement with the following snippet:
+
+          Then('a success message should be displayed saying {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And a password reset email should arrive in the inbox within 2 minutes
+        Undefined. Implement with the following snippet:
+
+          Then('a password reset email should arrive in the inbox within {int} minutes', function (int) {
+          // Then('a password reset email should arrive in the inbox within {float} minutes', function (float) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the reset link in the email should be valid and lead to a password reset form
+        Undefined. Implement with the following snippet:
+
+          Then('the reset link in the email should be valid and lead to a password reset form', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+11) Scenario: TC-REG-01 - Successful registration with valid details # features/manual/registration.feature:31
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Register" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user enters a unique valid email address
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a unique valid email address', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters a valid username between 3 and 20 characters
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid username between {int} and {int} characters', function (int, int2) {
+          // When('the user enters a valid username between {int} and {float} characters', function (int, float) {
+          // When('the user enters a valid username between {float} and {int} characters', function (float, int) {
+          // When('the user enters a valid username between {float} and {float} characters', function (float, float2) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters a password that meets complexity requirements
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a password that meets complexity requirements', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters the same password in the confirm password field
+        Undefined. Implement with the following snippet:
+
+          When('the user enters the same password in the confirm password field', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user selects their date of birth indicating they are over 18
+        Undefined. Implement with the following snippet:
+
+          When('the user selects their date of birth indicating they are over {int}', function (int) {
+          // When('the user selects their date of birth indicating they are over {float}', function (float) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user accepts the Terms and Conditions
+        Undefined. Implement with the following snippet:
+
+          When('the user accepts the Terms and Conditions', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Complete Registration" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then the user should be redirected to the GameTwist dashboard
+        Undefined. Implement with the following snippet:
+
+          Then('the user should be redirected to the GameTwist dashboard', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And a welcome message should be displayed
+        Undefined. Implement with the following snippet:
+
+          Then('a welcome message should be displayed', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And a confirmation email should be sent to the registered email address
+        Undefined. Implement with the following snippet:
+
+          Then('a confirmation email should be sent to the registered email address', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+12) Scenario: TC-REG-02 - Registration with an already registered email # features/manual/registration.feature:47
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Register" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Given a user account already exists with email "existing.user@example.com"
+        Undefined. Implement with the following snippet:
+
+          Given('a user account already exists with email {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user enters the email address "existing.user@example.com"
+        Undefined. Implement with the following snippet:
+
+          When('the user enters the email address {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user fills in all other required fields with valid data
+        Undefined. Implement with the following snippet:
+
+          When('the user fills in all other required fields with valid data', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Complete Registration" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then an error message should be displayed saying "This email address is already registered"
+        Undefined. Implement with the following snippet:
+
+          Then('an error message should be displayed saying {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user should remain on the registration page
+        Undefined. Implement with the following snippet:
+
+          Then('the user should remain on the registration page', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+13) Scenario: TC-REG-03 - Registration with invalid password formats # features/manual/registration.feature:69
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Register" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user enters a valid email address
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid email address', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters a valid username
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid username', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters the password "abc"
+        Undefined. Implement with the following snippet:
+
+          When('the user enters the password {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Complete Registration" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then an error message "Password must be at least 8 characters" should be displayed
+        Undefined. Implement with the following snippet:
+
+          Then('an error message {string} should be displayed', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user should remain on the registration page
+        Undefined. Implement with the following snippet:
+
+          Then('the user should remain on the registration page', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+14) Scenario: TC-REG-03 - Registration with invalid password formats # features/manual/registration.feature:70
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Register" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user enters a valid email address
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid email address', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters a valid username
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid username', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters the password "12345678"
+        Undefined. Implement with the following snippet:
+
+          When('the user enters the password {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Complete Registration" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then an error message "Password must contain at least one letter" should be displayed
+        Undefined. Implement with the following snippet:
+
+          Then('an error message {string} should be displayed', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user should remain on the registration page
+        Undefined. Implement with the following snippet:
+
+          Then('the user should remain on the registration page', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+15) Scenario: TC-REG-03 - Registration with invalid password formats # features/manual/registration.feature:71
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Register" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user enters a valid email address
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid email address', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters a valid username
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid username', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters the password "abcdefgh"
+        Undefined. Implement with the following snippet:
+
+          When('the user enters the password {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Complete Registration" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then an error message "Password must contain at least one number" should be displayed
+        Undefined. Implement with the following snippet:
+
+          Then('an error message {string} should be displayed', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user should remain on the registration page
+        Undefined. Implement with the following snippet:
+
+          Then('the user should remain on the registration page', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+16) Scenario: TC-REG-03 - Registration with invalid password formats # features/manual/registration.feature:72
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Register" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user enters a valid email address
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid email address', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters a valid username
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid username', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters the password "abc 1234"
+        Undefined. Implement with the following snippet:
+
+          When('the user enters the password {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Complete Registration" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then an error message "Password must not contain spaces" should be displayed
+        Undefined. Implement with the following snippet:
+
+          Then('an error message {string} should be displayed', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user should remain on the registration page
+        Undefined. Implement with the following snippet:
+
+          Then('the user should remain on the registration page', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+17) Scenario: TC-REG-03 - Registration with invalid password formats # features/manual/registration.feature:73
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Register" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user enters a valid email address
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid email address', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters a valid username
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid username', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters the password ""
+        Undefined. Implement with the following snippet:
+
+          When('the user enters the password {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Complete Registration" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then an error message "Password is required" should be displayed
+        Undefined. Implement with the following snippet:
+
+          Then('an error message {string} should be displayed', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user should remain on the registration page
+        Undefined. Implement with the following snippet:
+
+          Then('the user should remain on the registration page', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+18) Scenario: TC-REG-04 - Registration blocked when CAPTCHA is not completed # features/manual/registration.feature:81
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Register" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user fills in all required registration fields with valid data
+        Undefined. Implement with the following snippet:
+
+          When('the user fills in all required registration fields with valid data', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user does NOT complete the CAPTCHA verification
+        Undefined. Implement with the following snippet:
+
+          When('the user does NOT complete the CAPTCHA verification', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Complete Registration" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then the form should not be submitted
+        Undefined. Implement with the following snippet:
+
+          Then('the form should not be submitted', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And a message should prompt the user to complete the CAPTCHA
+        Undefined. Implement with the following snippet:
+
+          Then('a message should prompt the user to complete the CAPTCHA', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+19) Scenario: TC-REG-05 - Registration blocked for users under 18 # features/manual/registration.feature:92
+    ? Given the user is on the GameTwist homepage "https://www.gametwist.com/en/"
+        Undefined. Implement with the following snippet:
+
+          Given('the user is on the GameTwist homepage {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks on the "Register" button
+        Undefined. Implement with the following snippet:
+
+          Given('the user clicks on the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? When the user enters a valid email address
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid email address', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters a valid username
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid username', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user enters a valid password
+        Undefined. Implement with the following snippet:
+
+          When('the user enters a valid password', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user selects a date of birth indicating they are under 18 years old
+        Undefined. Implement with the following snippet:
+
+          When('the user selects a date of birth indicating they are under {int} years old', function (int) {
+          // When('the user selects a date of birth indicating they are under {float} years old', function (float) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user clicks the "Complete Registration" button
+        Undefined. Implement with the following snippet:
+
+          When('the user clicks the {string} button', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? Then an error message should be displayed saying "You must be at least 18 years old to register"
+        Undefined. Implement with the following snippet:
+
+          Then('an error message should be displayed saying {string}', function (string) {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+    ? And the user should remain on the registration page
+        Undefined. Implement with the following snippet:
+
+          Then('the user should remain on the registration page', function () {
+            // Write code here that turns the phrase above into concrete actions
+            return 'pending';
+          });
+
+
+22 scenarios (19 undefined, 3 passed)
+163 steps (142 undefined, 6 skipped, 15 passed)
+0m04.092s (executing steps: 0m04.073s)
