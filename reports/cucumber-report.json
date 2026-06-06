@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 23147000
+              "duration": 21614792
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 135416
+              "duration": 126292
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1320012541
+              "duration": 1324028875
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 14,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:102"
+              "location": "src/steps/petstore.steps.ts:103"
             },
             "result": {
               "status": "passed",
-              "duration": 3651917
+              "duration": 3547207
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 15,
             "name": "the response body should contain the pet name \"Bruno\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:109"
+              "location": "src/steps/petstore.steps.ts:110"
             },
             "result": {
               "status": "passed",
-              "duration": 472708
+              "duration": 596375
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 16,
             "name": "the response body should contain the status \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:117"
+              "location": "src/steps/petstore.steps.ts:118"
             },
             "result": {
               "status": "passed",
-              "duration": 352417
+              "duration": 371874
             }
           },
           {
@@ -87,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1316749
+              "duration": 5044000
             }
           }
         ],
@@ -115,7 +115,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 697250
+              "duration": 797542
             }
           },
           {
@@ -128,7 +128,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 293601832
+              "duration": 273769166
             }
           },
           {
@@ -136,9 +136,12 @@
             "keyword": "When ",
             "line": 21,
             "name": "I send a GET request to \"/pet/{id}\" using the created pet's ID",
+            "match": {
+              "location": "src/steps/petstore.steps.ts:47"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 273584791
             }
           },
           {
@@ -147,11 +150,11 @@
             "line": 22,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:102"
+              "location": "src/steps/petstore.steps.ts:103"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 610915
             }
           },
           {
@@ -160,11 +163,11 @@
             "line": 23,
             "name": "the response body pet name should match \"Bruno\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:125"
+              "location": "src/steps/petstore.steps.ts:126"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 432999
             }
           },
           {
@@ -173,11 +176,11 @@
             "line": 24,
             "name": "the response body pet status should match \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:133"
+              "location": "src/steps/petstore.steps.ts:134"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 377667
             }
           },
           {
@@ -186,11 +189,11 @@
             "line": 25,
             "name": "the response body pet ID should match the one returned by POST",
             "match": {
-              "location": "src/steps/petstore.steps.ts:141"
+              "location": "src/steps/petstore.steps.ts:142"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 346958
             }
           },
           {
@@ -198,7 +201,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 872333
+              "duration": 878791
             }
           }
         ],
@@ -226,7 +229,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 579834
+              "duration": 1099874
             }
           },
           {
@@ -239,7 +242,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 272952166
+              "duration": 354284916
             }
           },
           {
@@ -248,11 +251,11 @@
             "line": 30,
             "name": "I send a PUT request to \"/pet\" with updated name \"Bruno Updated\" and status \"pending\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:69"
+              "location": "src/steps/petstore.steps.ts:70"
             },
             "result": {
               "status": "passed",
-              "duration": 338317125
+              "duration": 307905667
             }
           },
           {
@@ -261,11 +264,11 @@
             "line": 31,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:102"
+              "location": "src/steps/petstore.steps.ts:103"
             },
             "result": {
               "status": "passed",
-              "duration": 299459
+              "duration": 706124
             }
           },
           {
@@ -274,11 +277,11 @@
             "line": 32,
             "name": "the response body should contain the pet name \"Bruno Updated\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:109"
+              "location": "src/steps/petstore.steps.ts:110"
             },
             "result": {
               "status": "passed",
-              "duration": 219958
+              "duration": 567041
             }
           },
           {
@@ -287,11 +290,11 @@
             "line": 33,
             "name": "the response body should contain the status \"pending\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:117"
+              "location": "src/steps/petstore.steps.ts:118"
             },
             "result": {
               "status": "passed",
-              "duration": 198417
+              "duration": 557166
             }
           },
           {
@@ -299,7 +302,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3202790
+              "duration": 906082
             }
           }
         ],
@@ -327,7 +330,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 629332
+              "duration": 2438458
             }
           },
           {
@@ -340,7 +343,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 272994042
+              "duration": 298411458
             }
           },
           {
@@ -348,9 +351,12 @@
             "keyword": "When ",
             "line": 38,
             "name": "I send a DELETE request to \"/pet/{id}\" using the created pet's ID",
+            "match": {
+              "location": "src/steps/petstore.steps.ts:91"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 308461041
             }
           },
           {
@@ -359,11 +365,11 @@
             "line": 39,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:102"
+              "location": "src/steps/petstore.steps.ts:103"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1337958
             }
           },
           {
@@ -371,9 +377,12 @@
             "keyword": "When ",
             "line": 40,
             "name": "I send a GET request to \"/pet/{id}\" using the created pet's ID",
+            "match": {
+              "location": "src/steps/petstore.steps.ts:47"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 308250832
             }
           },
           {
@@ -382,11 +391,11 @@
             "line": 41,
             "name": "the response status code should be 404",
             "match": {
-              "location": "src/steps/petstore.steps.ts:102"
+              "location": "src/steps/petstore.steps.ts:103"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1057875
             }
           },
           {
@@ -394,7 +403,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1028708
+              "duration": 1000333
             }
           }
         ],
@@ -422,7 +431,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 713333
+              "duration": 734709
             }
           },
           {
@@ -431,11 +440,11 @@
             "line": 45,
             "name": "I send a GET request to \"/pet/999999999\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:57"
+              "location": "src/steps/petstore.steps.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 273205666
+              "duration": 273826791
             }
           },
           {
@@ -444,11 +453,11 @@
             "line": 46,
             "name": "the response status code should be 404",
             "match": {
-              "location": "src/steps/petstore.steps.ts:102"
+              "location": "src/steps/petstore.steps.ts:103"
             },
             "result": {
               "status": "passed",
-              "duration": 528542
+              "duration": 534665
             }
           },
           {
@@ -457,11 +466,11 @@
             "line": 47,
             "name": "the response body should contain the message \"Pet not found\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:151"
+              "location": "src/steps/petstore.steps.ts:152"
             },
             "result": {
               "status": "passed",
-              "duration": 420834
+              "duration": 500542
             }
           },
           {
@@ -469,7 +478,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 642833
+              "duration": 819040
             }
           }
         ],

@@ -6,7 +6,7 @@ module.exports = {
       'src/support/hooks.ts',
       'src/steps/**/*.steps.ts'
     ],
-    requireModule: ['ts-node/register'],
+    requireModule: ['ts-node/register', 'tsconfig-paths/register'],
     format: [
       'progress-bar',
       'html:reports/cucumber-report.html',

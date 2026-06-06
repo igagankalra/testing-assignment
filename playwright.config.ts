@@ -29,8 +29,8 @@ export default defineConfig({
   ],
 
   use: {
-    // Base URL not needed since PetApiClient has its own BASE_URL
-    // but useful if you switch to relative paths later
+    // baseURL is set on the request context inside the spec (from API_BASE_URL),
+    // so PetApiClient can use relative paths like '/pet'.
 
     // Extra HTTP headers sent with every request
     extraHTTPHeaders: {

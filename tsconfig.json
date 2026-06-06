@@ -9,6 +9,10 @@
     "skipLibCheck": true,
     "outDir": "./dist",
     "rootDir": "./",
+    "paths": {
+      "@api/*": ["./src/api/*"],
+      "@support/*": ["./src/support/*"]
+    },
     "resolveJsonModule": true
   },
   "include": ["src/**/*", "features/**/*"],

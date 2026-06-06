@@ -1,6 +1,7 @@
 import { test, expect, APIRequestContext, request } from '@playwright/test';
-import { PetApiClient } from '../api/PetApiClient';
+import { PetApiClient } from '@api/PetApiClient';
 import { Pet } from '../types/petstore.types';
+import 'dotenv/config';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Petstore REST API Tests
@@ -14,6 +15,9 @@ import { Pet } from '../types/petstore.types';
 //   We use a unique petId per test run (timestamp-based) to avoid conflicts
 //   between concurrent test runs on the shared public Petstore API.
 // ─────────────────────────────────────────────────────────────────────────────
+
+// Trailing slash is required (Playwright joins paths via the URL spec).
+const DEFAULT_API_BASE_URL = 'https://petstore.swagger.io/v2/';
 
 // Generate a unique ID using timestamp to prevent test data collisions
 // e.g. if two people run tests at the same time against the public API
@@ -39,10 +43,10 @@ test.describe('Petstore API - Pet Endpoints', () => {
   // beforeAll: runs ONCE before all tests in this describe block.
   // We create one shared APIRequestContext for all tests (more efficient).
   test.beforeAll(async () => {
-    // Create a standalone API request context (no browser needed)
+    // Create a standalone API request context (no browser needed).
+    // baseURL lives here so PetApiClient can use relative paths like '/pet'.
     apiContext = await request.newContext({
-      // baseURL is not used here since PetApiClient has its own BASE_URL,
-      // but we could set it here too for extra flexibility.
+      baseURL: process.env.API_BASE_URL ?? DEFAULT_API_BASE_URL,
       extraHTTPHeaders: {
         Accept: 'application/json',
       },

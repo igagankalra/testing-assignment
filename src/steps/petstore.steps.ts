@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { CustomWorld } from '../support/world';
+import { CustomWorld } from '@support/world';
 import { Pet } from '../types/petstore.types';
 
 // Unique pet ID per test run (prevents collisions on shared public API)
@@ -43,8 +43,9 @@ When(
   }
 );
 
+// Regex form: cucumber-expression escaping of literal `{id}` is unreliable.
 When(
-  'I send a GET request to "/pet/\\{id\\}" using the created pet\'s ID',
+  /^I send a GET request to "\/pet\/\{id\}" using the created pet's ID$/,
   async function (this: CustomWorld) {
     const response = await this.client.getPetById(this.createdPet.id);
     this.lastResponse = {
@@ -88,7 +89,7 @@ When(
 );
 
 When(
-  'I send a DELETE request to "/pet/\\{id\\}" using the created pet\'s ID',
+  /^I send a DELETE request to "\/pet\/\{id\}" using the created pet's ID$/,
   async function (this: CustomWorld) {
     const response = await this.client.deletePet(this.createdPet.id);
     this.lastResponse = {
