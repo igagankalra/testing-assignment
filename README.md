@@ -16,6 +16,8 @@ greentube-assignment/
 │       └── petstore.feature       # Part 3: Cucumber BDD for Petstore API
 ├── src/
 │   ├── api/
+│   │   ├── endpoints/
+│   │   │   └── pet.ts             # Pet API endpoint constants and URLs
 │   │   └── PetApiClient.ts        # API Client Pattern — all HTTP calls live here
 │   ├── steps/
 │   │   ├── petstore.steps.ts      # Cucumber step definitions for API feature
@@ -25,9 +27,12 @@ greentube-assignment/
 │   │   └── hooks.ts               # Before/After hooks
 │   └── types/
 │       └── petstore.types.ts      # TypeScript interfaces for API data models
+├── .env                           # Environment variables (git-ignored)
+├── .env.example                   # Example environment configuration
 ├── cucumber.config.js             # Cucumber runner configuration
 ├── playwright.config.ts           # Playwright test runner configuration
-└── tsconfig.json                  # TypeScript compiler options
+├── tsconfig.json                  # TypeScript compiler options
+└── package.json                   # Dependencies and scripts
 ```
 
 ---
@@ -38,6 +43,25 @@ greentube-assignment/
 # Install dependencies
 npm install
 ```
+
+---
+
+## Environment Configuration
+
+Create a `.env` file in the project root (copy from `.env.example`):
+
+```env
+# Petstore API Configuration
+API_BASE_URL=https://petstore.swagger.io/v2
+
+# UI Test Configuration (for future use)
+BASE_URL=https://www.gametwist.com/en/
+
+# Browser Configuration
+HEADLESS=true
+```
+
+**Note:** The `.env` file is git-ignored for security. Use `.env.example` as a template.
 
 ---
 
@@ -65,11 +89,24 @@ npm run test:api:playwright
 
 ## Key Design Decisions
 
+### API Endpoints (`src/api/endpoints/`)
+API URLs are centralized in endpoint definition files (e.g., `pet.ts`). This provides:
+- Single source of truth for all endpoint paths
+- Easy switching between environments (dev, staging, prod)
+- Clear separation of concerns — endpoints separate from HTTP logic
+
+### Environment Configuration (`.env`)
+API base URLs and configuration are loaded from environment variables via `.env` file:
+- Supports multiple environments without code changes
+- Sensitive data kept out of version control
+- Configuration via `dotenv/config` imported in `world.ts`
+
 ### API Client Pattern (`PetApiClient.ts`)
 All HTTP interactions are encapsulated in a single class. Tests call business-level
 methods like `client.createPet()` — not raw HTTP calls. This means:
 - One place to update base URL or auth headers
 - Tests are readable and focused on *what* is being tested, not *how*
+- Works seamlessly with externalized endpoint URLs
 
 ### Unique Pet IDs
 Each test run uses `Date.now() % 1000000` as the pet ID. This prevents collisions

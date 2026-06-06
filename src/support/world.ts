@@ -2,6 +2,7 @@ import { setWorldConstructor, World, IWorldOptions } from '@cucumber/cucumber';
 import { request, APIRequestContext } from '@playwright/test';
 import { PetApiClient } from '../api/PetApiClient';
 import { Pet } from '../types/petstore.types';
+import 'dotenv/config';
 
 // Shared state across Cucumber steps in a scenario
 export class CustomWorld extends World {

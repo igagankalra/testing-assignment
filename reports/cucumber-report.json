@@ -6,7 +6,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-01---post-/pet---create-a-new-pet-successfully",
         "keyword": "Scenario",
-        "line": 20,
+        "line": 11,
         "name": "TC-API-01 - POST /pet - Create a new pet successfully",
         "steps": [
           {
@@ -14,72 +14,72 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 18070875
+              "duration": 23147000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 21,
+            "line": 12,
             "name": "I have a pet payload with name \"Bruno\" and status \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:22"
+              "location": "src/steps/petstore.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 112124
+              "duration": 135416
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 22,
+            "line": 13,
             "name": "I send a POST request to \"/pet\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:62"
+              "location": "src/steps/petstore.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 1113982041
+              "duration": 1320012541
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
+            "line": 14,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:131"
+              "location": "src/steps/petstore.steps.ts:102"
             },
             "result": {
               "status": "passed",
-              "duration": 2376208
+              "duration": 3651917
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
+            "line": 15,
             "name": "the response body should contain the pet name \"Bruno\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:139"
+              "location": "src/steps/petstore.steps.ts:109"
             },
             "result": {
               "status": "passed",
-              "duration": 374250
+              "duration": 472708
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
+            "line": 16,
             "name": "the response body should contain the status \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:147"
+              "location": "src/steps/petstore.steps.ts:117"
             },
             "result": {
               "status": "passed",
-              "duration": 291208
+              "duration": 352417
             }
           },
           {
@@ -87,18 +87,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 939375
+              "duration": 1316749
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 19
+            "line": 10
           },
           {
             "name": "@smoke",
-            "line": 19
+            "line": 10
           }
         ],
         "type": "scenario"
@@ -107,7 +107,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-02---get-/pet/{id}---retrieve-the-created-pet-and-verify-it-matches-post-data",
         "keyword": "Scenario",
-        "line": 30,
+        "line": 19,
         "name": "TC-API-02 - GET /pet/{id} - Retrieve the created pet and verify it matches POST data",
         "steps": [
           {
@@ -115,26 +115,26 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 530292
+              "duration": 697250
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 31,
+            "line": 20,
             "name": "I have previously created a pet with name \"Bruno\" and status \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:38"
+              "location": "src/steps/petstore.steps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 272239957
+              "duration": 293601832
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 32,
+            "line": 21,
             "name": "I send a GET request to \"/pet/{id}\" using the created pet's ID",
             "result": {
               "status": "undefined",
@@ -144,10 +144,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
+            "line": 22,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:131"
+              "location": "src/steps/petstore.steps.ts:102"
             },
             "result": {
               "status": "skipped",
@@ -157,10 +157,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 34,
+            "line": 23,
             "name": "the response body pet name should match \"Bruno\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:155"
+              "location": "src/steps/petstore.steps.ts:125"
             },
             "result": {
               "status": "skipped",
@@ -170,10 +170,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 35,
+            "line": 24,
             "name": "the response body pet status should match \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:163"
+              "location": "src/steps/petstore.steps.ts:133"
             },
             "result": {
               "status": "skipped",
@@ -183,10 +183,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 36,
+            "line": 25,
             "name": "the response body pet ID should match the one returned by POST",
             "match": {
-              "location": "src/steps/petstore.steps.ts:171"
+              "location": "src/steps/petstore.steps.ts:141"
             },
             "result": {
               "status": "skipped",
@@ -198,18 +198,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1224416
+              "duration": 872333
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 29
+            "line": 18
           },
           {
             "name": "@smoke",
-            "line": 29
+            "line": 18
           }
         ],
         "type": "scenario"
@@ -218,7 +218,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-03---put-/pet---update-pet-name-and-status",
         "keyword": "Scenario",
-        "line": 40,
+        "line": 28,
         "name": "TC-API-03 - PUT /pet - Update pet name and status",
         "steps": [
           {
@@ -226,72 +226,72 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1187917
+              "duration": 579834
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 41,
+            "line": 29,
             "name": "I have previously created a pet with name \"Bruno\" and status \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:38"
+              "location": "src/steps/petstore.steps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 269301625
+              "duration": 272952166
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 42,
+            "line": 30,
             "name": "I send a PUT request to \"/pet\" with updated name \"Bruno Updated\" and status \"pending\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:97"
+              "location": "src/steps/petstore.steps.ts:69"
             },
             "result": {
               "status": "passed",
-              "duration": 709250040
+              "duration": 338317125
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 43,
+            "line": 31,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:131"
+              "location": "src/steps/petstore.steps.ts:102"
             },
             "result": {
               "status": "passed",
-              "duration": 917708
+              "duration": 299459
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 44,
+            "line": 32,
             "name": "the response body should contain the pet name \"Bruno Updated\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:139"
+              "location": "src/steps/petstore.steps.ts:109"
             },
             "result": {
               "status": "passed",
-              "duration": 527167
+              "duration": 219958
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 45,
+            "line": 33,
             "name": "the response body should contain the status \"pending\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:147"
+              "location": "src/steps/petstore.steps.ts:117"
             },
             "result": {
               "status": "passed",
-              "duration": 422000
+              "duration": 198417
             }
           },
           {
@@ -299,18 +299,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1018458
+              "duration": 3202790
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 39
+            "line": 27
           },
           {
             "name": "@regression",
-            "line": 39
+            "line": 27
           }
         ],
         "type": "scenario"
@@ -319,7 +319,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-04---delete-/pet/{id}---delete-pet-and-verify-it-no-longer-exists",
         "keyword": "Scenario",
-        "line": 49,
+        "line": 36,
         "name": "TC-API-04 - DELETE /pet/{id} - Delete pet and verify it no longer exists",
         "steps": [
           {
@@ -327,26 +327,26 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 714417
+              "duration": 629332
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 50,
+            "line": 37,
             "name": "I have previously created a pet with name \"Bruno\" and status \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:38"
+              "location": "src/steps/petstore.steps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 368951542
+              "duration": 272994042
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 51,
+            "line": 38,
             "name": "I send a DELETE request to \"/pet/{id}\" using the created pet's ID",
             "result": {
               "status": "undefined",
@@ -356,10 +356,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 52,
+            "line": 39,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:131"
+              "location": "src/steps/petstore.steps.ts:102"
             },
             "result": {
               "status": "skipped",
@@ -369,7 +369,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 53,
+            "line": 40,
             "name": "I send a GET request to \"/pet/{id}\" using the created pet's ID",
             "result": {
               "status": "undefined",
@@ -379,10 +379,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 54,
+            "line": 41,
             "name": "the response status code should be 404",
             "match": {
-              "location": "src/steps/petstore.steps.ts:131"
+              "location": "src/steps/petstore.steps.ts:102"
             },
             "result": {
               "status": "skipped",
@@ -394,18 +394,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1985832
+              "duration": 1028708
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 48
+            "line": 35
           },
           {
             "name": "@regression",
-            "line": 48
+            "line": 35
           }
         ],
         "type": "scenario"
@@ -414,7 +414,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-05---get-/pet/{id}---returns-404-for-non-existent-pet",
         "keyword": "Scenario",
-        "line": 59,
+        "line": 44,
         "name": "TC-API-05 - GET /pet/{id} - Returns 404 for non-existent pet",
         "steps": [
           {
@@ -422,46 +422,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1043624
+              "duration": 713333
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 60,
+            "line": 45,
             "name": "I send a GET request to \"/pet/999999999\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:84"
+              "location": "src/steps/petstore.steps.ts:57"
             },
             "result": {
               "status": "passed",
-              "duration": 299918959
+              "duration": 273205666
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 61,
+            "line": 46,
             "name": "the response status code should be 404",
             "match": {
-              "location": "src/steps/petstore.steps.ts:131"
+              "location": "src/steps/petstore.steps.ts:102"
             },
             "result": {
               "status": "passed",
-              "duration": 695708
+              "duration": 528542
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 62,
+            "line": 47,
             "name": "the response body should contain the message \"Pet not found\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:181"
+              "location": "src/steps/petstore.steps.ts:151"
             },
             "result": {
               "status": "passed",
-              "duration": 710792
+              "duration": 420834
             }
           },
           {
@@ -469,1780 +469,28 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 810042
+              "duration": 642833
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 58
+            "line": 43
           },
           {
             "name": "@regression",
-            "line": 58
+            "line": 43
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "petstore-api---pet-crud-operations",
-    "line": 13,
+    "line": 5,
     "keyword": "Feature",
     "name": "Petstore API - Pet CRUD Operations",
     "tags": [],
     "uri": "features/api/petstore.feature"
-  },
-  {
-    "description": "  As a registered user of GameTwist.com\n  I want to log in to my account\n  So that I can access my games, coins, and profile",
-    "elements": [
-      {
-        "description": "",
-        "id": "user-login-on-gametwist;tc-log-01---successful-login-with-valid-credentials",
-        "keyword": "Scenario",
-        "line": 29,
-        "name": "TC-LOG-01 - Successful login with valid credentials",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "a registered account exists with email \"test.user@example.com\" and password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user clicks on the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 30,
-            "name": "the user enters the email \"test.user@example.com\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "the user enters the password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "the user clicks the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "the user should be redirected to the GameTwist dashboard",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "the user's username should be visible in the navigation bar",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "the user's coin balance should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 28
-          },
-          {
-            "name": "@regression",
-            "line": 28
-          },
-          {
-            "name": "@automated",
-            "line": 28
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-login-on-gametwist;tc-log-02---login-attempt-with-incorrect-password",
-        "keyword": "Scenario",
-        "line": 42,
-        "name": "TC-LOG-02 - Login attempt with incorrect password",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "a registered account exists with email \"test.user@example.com\" and password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user clicks on the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 43,
-            "name": "the user enters the email \"test.user@example.com\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "the user enters an incorrect password \"WrongPass99\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "the user clicks the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 46,
-            "name": "an error message should be displayed saying \"Invalid email or password\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "the user should remain on the login page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 48,
-            "name": "the user should NOT be logged in",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 41
-          },
-          {
-            "name": "@automated",
-            "line": 41
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-login-on-gametwist;tc-log-03---login-with-missing-or-invalid-fields",
-        "keyword": "Scenario Outline",
-        "line": 62,
-        "name": "TC-LOG-03 - Login with missing or invalid fields",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "a registered account exists with email \"test.user@example.com\" and password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user clicks on the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 55,
-            "name": "the user enters the email \"\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "the user enters the password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 57,
-            "name": "the user clicks the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 58,
-            "name": "an error message \"Email is required\" should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 53
-          },
-          {
-            "name": "@automated",
-            "line": 53
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-login-on-gametwist;tc-log-03---login-with-missing-or-invalid-fields",
-        "keyword": "Scenario Outline",
-        "line": 63,
-        "name": "TC-LOG-03 - Login with missing or invalid fields",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "a registered account exists with email \"test.user@example.com\" and password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user clicks on the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 55,
-            "name": "the user enters the email \"test.user@example.com\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "the user enters the password \"\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 57,
-            "name": "the user clicks the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 58,
-            "name": "an error message \"Password is required\" should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 53
-          },
-          {
-            "name": "@automated",
-            "line": 53
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-login-on-gametwist;tc-log-03---login-with-missing-or-invalid-fields",
-        "keyword": "Scenario Outline",
-        "line": 64,
-        "name": "TC-LOG-03 - Login with missing or invalid fields",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "a registered account exists with email \"test.user@example.com\" and password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user clicks on the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 55,
-            "name": "the user enters the email \"\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "the user enters the password \"\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 57,
-            "name": "the user clicks the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 58,
-            "name": "an error message \"Email and password are required\" should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 53
-          },
-          {
-            "name": "@automated",
-            "line": 53
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-login-on-gametwist;tc-log-03---login-with-missing-or-invalid-fields",
-        "keyword": "Scenario Outline",
-        "line": 65,
-        "name": "TC-LOG-03 - Login with missing or invalid fields",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "a registered account exists with email \"test.user@example.com\" and password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user clicks on the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 55,
-            "name": "the user enters the email \"not-a-valid-email\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
-            "name": "the user enters the password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 57,
-            "name": "the user clicks the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 58,
-            "name": "an error message \"Please enter a valid email\" should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 53
-          },
-          {
-            "name": "@automated",
-            "line": 53
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-login-on-gametwist;tc-log-04---account-locked-after-5-consecutive-failed-login-attempts",
-        "keyword": "Scenario",
-        "line": 72,
-        "name": "TC-LOG-04 - Account locked after 5 consecutive failed login attempts",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "a registered account exists with email \"test.user@example.com\" and password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user clicks on the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 73,
-            "name": "the user attempts to log in with wrong credentials 5 times in a row",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 74,
-            "name": "the account should be temporarily locked",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 75,
-            "name": "an error message should be displayed saying \"Your account has been temporarily locked due to too many failed attempts\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 76,
-            "name": "the user should be unable to log in even with correct credentials",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 77,
-            "name": "a lockout notification email should be sent to \"test.user@example.com\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 71
-          },
-          {
-            "name": "@automated",
-            "line": 71
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-login-on-gametwist;tc-log-05---password-reset-email-sent-for-registered-account",
-        "keyword": "Scenario",
-        "line": 86,
-        "name": "TC-LOG-05 - Password reset email sent for registered account",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "a registered account exists with email \"test.user@example.com\" and password \"ValidPass1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user clicks on the \"Log In\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 87,
-            "name": "the user clicks the \"Forgot Password?\" link",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 88,
-            "name": "the user enters the registered email \"test.user@example.com\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 89,
-            "name": "the user clicks the \"Send Reset Link\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 90,
-            "name": "a success message should be displayed saying \"A password reset link has been sent to your email\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 91,
-            "name": "a password reset email should arrive in the inbox within 2 minutes",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 92,
-            "name": "the reset link in the email should be valid and lead to a password reset form",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@manual",
-            "line": 85
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "user-login-on-gametwist",
-    "line": 14,
-    "keyword": "Feature",
-    "name": "User Login on GameTwist",
-    "tags": [],
-    "uri": "features/manual/login.feature"
-  },
-  {
-    "description": "  As a new visitor to GameTwist.com\n  I want to create an account\n  So that I can access the games and features of the platform",
-    "elements": [
-      {
-        "description": "",
-        "id": "user-registration-on-gametwist;tc-reg-01---successful-registration-with-valid-details",
-        "keyword": "Scenario",
-        "line": 31,
-        "name": "TC-REG-01 - Successful registration with valid details",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user clicks on the \"Register\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 32,
-            "name": "the user enters a unique valid email address",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
-            "name": "the user enters a valid username between 3 and 20 characters",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "the user enters a password that meets complexity requirements",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "the user enters the same password in the confirm password field",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "the user selects their date of birth indicating they are over 18",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "the user accepts the Terms and Conditions",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "the user clicks the \"Complete Registration\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "the user should be redirected to the GameTwist dashboard",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "a welcome message should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "a confirmation email should be sent to the registered email address",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 30
-          },
-          {
-            "name": "@regression",
-            "line": 30
-          },
-          {
-            "name": "@automated",
-            "line": 30
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-registration-on-gametwist;tc-reg-02---registration-with-an-already-registered-email",
-        "keyword": "Scenario",
-        "line": 47,
-        "name": "TC-REG-02 - Registration with an already registered email",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user clicks on the \"Register\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 48,
-            "name": "a user account already exists with email \"existing.user@example.com\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 49,
-            "name": "the user enters the email address \"existing.user@example.com\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 50,
-            "name": "the user fills in all other required fields with valid data",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 51,
-            "name": "the user clicks the \"Complete Registration\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 52,
-            "name": "an error message should be displayed saying \"This email address is already registered\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "the user should remain on the registration page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 46
-          },
-          {
-            "name": "@automated",
-            "line": 46
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-registration-on-gametwist;tc-reg-03---registration-with-invalid-password-formats",
-        "keyword": "Scenario Outline",
-        "line": 69,
-        "name": "TC-REG-03 - Registration with invalid password formats",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user clicks on the \"Register\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 60,
-            "name": "the user enters a valid email address",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 61,
-            "name": "the user enters a valid username",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 62,
-            "name": "the user enters the password \"abc\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 63,
-            "name": "the user clicks the \"Complete Registration\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 64,
-            "name": "an error message \"Password must be at least 8 characters\" should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 65,
-            "name": "the user should remain on the registration page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 58
-          },
-          {
-            "name": "@automated",
-            "line": 58
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-registration-on-gametwist;tc-reg-03---registration-with-invalid-password-formats",
-        "keyword": "Scenario Outline",
-        "line": 70,
-        "name": "TC-REG-03 - Registration with invalid password formats",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user clicks on the \"Register\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 60,
-            "name": "the user enters a valid email address",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 61,
-            "name": "the user enters a valid username",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 62,
-            "name": "the user enters the password \"12345678\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 63,
-            "name": "the user clicks the \"Complete Registration\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 64,
-            "name": "an error message \"Password must contain at least one letter\" should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 65,
-            "name": "the user should remain on the registration page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 58
-          },
-          {
-            "name": "@automated",
-            "line": 58
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-registration-on-gametwist;tc-reg-03---registration-with-invalid-password-formats",
-        "keyword": "Scenario Outline",
-        "line": 71,
-        "name": "TC-REG-03 - Registration with invalid password formats",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user clicks on the \"Register\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 60,
-            "name": "the user enters a valid email address",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 61,
-            "name": "the user enters a valid username",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 62,
-            "name": "the user enters the password \"abcdefgh\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 63,
-            "name": "the user clicks the \"Complete Registration\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 64,
-            "name": "an error message \"Password must contain at least one number\" should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 65,
-            "name": "the user should remain on the registration page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 58
-          },
-          {
-            "name": "@automated",
-            "line": 58
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-registration-on-gametwist;tc-reg-03---registration-with-invalid-password-formats",
-        "keyword": "Scenario Outline",
-        "line": 72,
-        "name": "TC-REG-03 - Registration with invalid password formats",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user clicks on the \"Register\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 60,
-            "name": "the user enters a valid email address",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 61,
-            "name": "the user enters a valid username",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 62,
-            "name": "the user enters the password \"abc 1234\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 63,
-            "name": "the user clicks the \"Complete Registration\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 64,
-            "name": "an error message \"Password must not contain spaces\" should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 65,
-            "name": "the user should remain on the registration page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 58
-          },
-          {
-            "name": "@automated",
-            "line": 58
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-registration-on-gametwist;tc-reg-03---registration-with-invalid-password-formats",
-        "keyword": "Scenario Outline",
-        "line": 73,
-        "name": "TC-REG-03 - Registration with invalid password formats",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user clicks on the \"Register\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 60,
-            "name": "the user enters a valid email address",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 61,
-            "name": "the user enters a valid username",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 62,
-            "name": "the user enters the password \"\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 63,
-            "name": "the user clicks the \"Complete Registration\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 64,
-            "name": "an error message \"Password is required\" should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 65,
-            "name": "the user should remain on the registration page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 58
-          },
-          {
-            "name": "@automated",
-            "line": 58
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-registration-on-gametwist;tc-reg-04---registration-blocked-when-captcha-is-not-completed",
-        "keyword": "Scenario",
-        "line": 81,
-        "name": "TC-REG-04 - Registration blocked when CAPTCHA is not completed",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user clicks on the \"Register\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 82,
-            "name": "the user fills in all required registration fields with valid data",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 83,
-            "name": "the user does NOT complete the CAPTCHA verification",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 84,
-            "name": "the user clicks the \"Complete Registration\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 85,
-            "name": "the form should not be submitted",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 86,
-            "name": "a message should prompt the user to complete the CAPTCHA",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@manual",
-            "line": 80
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "user-registration-on-gametwist;tc-reg-05---registration-blocked-for-users-under-18",
-        "keyword": "Scenario",
-        "line": 92,
-        "name": "TC-REG-05 - Registration blocked for users under 18",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "the user is on the GameTwist homepage \"https://www.gametwist.com/en/\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user clicks on the \"Register\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 93,
-            "name": "the user enters a valid email address",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 94,
-            "name": "the user enters a valid username",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 95,
-            "name": "the user enters a valid password",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 96,
-            "name": "the user selects a date of birth indicating they are under 18 years old",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 97,
-            "name": "the user clicks the \"Complete Registration\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 98,
-            "name": "an error message should be displayed saying \"You must be at least 18 years old to register\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 99,
-            "name": "the user should remain on the registration page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 91
-          },
-          {
-            "name": "@automated",
-            "line": 91
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "user-registration-on-gametwist",
-    "line": 16,
-    "keyword": "Feature",
-    "name": "User Registration on GameTwist",
-    "tags": [],
-    "uri": "features/manual/registration.feature"
   }
 ]
