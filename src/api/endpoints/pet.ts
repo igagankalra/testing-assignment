@@ -1,6 +1,5 @@
-// Pet API endpoints (relative paths — base URL is set on the request context).
-// NOTE: no leading slash. With Playwright's baseURL, a leading slash resets the
-// path and drops segments like /v2. Keep paths relative.
+// Relative paths only — base URL is set on the request context.
+// A leading slash would replace the base path and drop /v2.
 export const PetEndpoints = {
   CREATE_PET: 'pet',
   GET_PET_BY_ID: (petId: number) => `pet/${petId}`,

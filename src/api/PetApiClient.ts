@@ -8,7 +8,6 @@ export type ApiLogEntry =
 
 export type ApiLogger = (entry: ApiLogEntry) => void;
 
-// API client for Petstore endpoints
 export class PetApiClient {
   constructor(
     private readonly request: APIRequestContext,

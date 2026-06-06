@@ -6,7 +6,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-01---post-/pet---create-a-new-pet-successfully",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 7,
         "name": "TC-API-01 - POST /pet - Create a new pet successfully",
         "steps": [
           {
@@ -14,72 +14,72 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 21614792
+              "duration": 23612582
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 12,
+            "line": 8,
             "name": "I have a pet payload with name \"Bruno\" and status \"available\"",
             "match": {
               "location": "src/steps/petstore.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 126292
+              "duration": 129167
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
+            "line": 9,
             "name": "I send a POST request to \"/pet\"",
             "match": {
               "location": "src/steps/petstore.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 1324028875
+              "duration": 1420415375
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 10,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:103"
+              "location": "src/steps/petstore.steps.ts:78"
             },
             "result": {
               "status": "passed",
-              "duration": 3547207
+              "duration": 2635624
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
+            "line": 11,
             "name": "the response body should contain the pet name \"Bruno\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:110"
+              "location": "src/steps/petstore.steps.ts:85"
             },
             "result": {
               "status": "passed",
-              "duration": 596375
+              "duration": 350999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
+            "line": 12,
             "name": "the response body should contain the status \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:118"
+              "location": "src/steps/petstore.steps.ts:92"
             },
             "result": {
               "status": "passed",
-              "duration": 371874
+              "duration": 265499
             }
           },
           {
@@ -87,18 +87,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5044000
+              "duration": 5182458
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 10
+            "line": 6
           },
           {
             "name": "@smoke",
-            "line": 10
+            "line": 6
           }
         ],
         "type": "scenario"
@@ -107,7 +107,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-02---get-/pet/{id}---retrieve-the-created-pet-and-verify-it-matches-post-data",
         "keyword": "Scenario",
-        "line": 19,
+        "line": 15,
         "name": "TC-API-02 - GET /pet/{id} - Retrieve the created pet and verify it matches POST data",
         "steps": [
           {
@@ -115,85 +115,85 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 797542
+              "duration": 769916
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 20,
+            "line": 16,
             "name": "I have previously created a pet with name \"Bruno\" and status \"available\"",
             "match": {
               "location": "src/steps/petstore.steps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 273769166
+              "duration": 281058542
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 17,
             "name": "I send a GET request to \"/pet/{id}\" using the created pet's ID",
             "match": {
-              "location": "src/steps/petstore.steps.ts:47"
+              "location": "src/steps/petstore.steps.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 273584791
+              "duration": 282356667
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 18,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:103"
+              "location": "src/steps/petstore.steps.ts:78"
             },
             "result": {
               "status": "passed",
-              "duration": 610915
+              "duration": 590791
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 19,
             "name": "the response body pet name should match \"Bruno\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:126"
+              "location": "src/steps/petstore.steps.ts:99"
             },
             "result": {
               "status": "passed",
-              "duration": 432999
+              "duration": 439583
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
+            "line": 20,
             "name": "the response body pet status should match \"available\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:134"
+              "location": "src/steps/petstore.steps.ts:106"
             },
             "result": {
               "status": "passed",
-              "duration": 377667
+              "duration": 361000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
+            "line": 21,
             "name": "the response body pet ID should match the one returned by POST",
             "match": {
-              "location": "src/steps/petstore.steps.ts:142"
+              "location": "src/steps/petstore.steps.ts:113"
             },
             "result": {
               "status": "passed",
-              "duration": 346958
+              "duration": 317583
             }
           },
           {
@@ -201,18 +201,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 878791
+              "duration": 697582
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 18
+            "line": 14
           },
           {
             "name": "@smoke",
-            "line": 18
+            "line": 14
           }
         ],
         "type": "scenario"
@@ -221,7 +221,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-03---put-/pet---update-pet-name-and-status",
         "keyword": "Scenario",
-        "line": 28,
+        "line": 24,
         "name": "TC-API-03 - PUT /pet - Update pet name and status",
         "steps": [
           {
@@ -229,72 +229,72 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1099874
+              "duration": 574666
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 29,
+            "line": 25,
             "name": "I have previously created a pet with name \"Bruno\" and status \"available\"",
             "match": {
               "location": "src/steps/petstore.steps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 354284916
+              "duration": 341248708
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 30,
+            "line": 26,
             "name": "I send a PUT request to \"/pet\" with updated name \"Bruno Updated\" and status \"pending\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:70"
+              "location": "src/steps/petstore.steps.ts:61"
             },
             "result": {
               "status": "passed",
-              "duration": 307905667
+              "duration": 305587416
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 31,
+            "line": 27,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:103"
+              "location": "src/steps/petstore.steps.ts:78"
             },
             "result": {
               "status": "passed",
-              "duration": 706124
+              "duration": 493457
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
+            "line": 28,
             "name": "the response body should contain the pet name \"Bruno Updated\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:110"
+              "location": "src/steps/petstore.steps.ts:85"
             },
             "result": {
               "status": "passed",
-              "duration": 567041
+              "duration": 385166
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
+            "line": 29,
             "name": "the response body should contain the status \"pending\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:118"
+              "location": "src/steps/petstore.steps.ts:92"
             },
             "result": {
               "status": "passed",
-              "duration": 557166
+              "duration": 364500
             }
           },
           {
@@ -302,18 +302,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 906082
+              "duration": 642707
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 27
+            "line": 23
           },
           {
             "name": "@regression",
-            "line": 27
+            "line": 23
           }
         ],
         "type": "scenario"
@@ -322,7 +322,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-04---delete-/pet/{id}---delete-pet-and-verify-it-no-longer-exists",
         "keyword": "Scenario",
-        "line": 36,
+        "line": 32,
         "name": "TC-API-04 - DELETE /pet/{id} - Delete pet and verify it no longer exists",
         "steps": [
           {
@@ -330,72 +330,72 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2438458
+              "duration": 601083
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 37,
+            "line": 33,
             "name": "I have previously created a pet with name \"Bruno\" and status \"available\"",
             "match": {
               "location": "src/steps/petstore.steps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 298411458
+              "duration": 280864542
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 38,
+            "line": 34,
             "name": "I send a DELETE request to \"/pet/{id}\" using the created pet's ID",
             "match": {
-              "location": "src/steps/petstore.steps.ts:91"
+              "location": "src/steps/petstore.steps.ts:70"
             },
             "result": {
               "status": "passed",
-              "duration": 308461041
+              "duration": 329044625
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 39,
+            "line": 35,
             "name": "the response status code should be 200",
             "match": {
-              "location": "src/steps/petstore.steps.ts:103"
+              "location": "src/steps/petstore.steps.ts:78"
             },
             "result": {
               "status": "passed",
-              "duration": 1337958
+              "duration": 294666
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 40,
+            "line": 36,
             "name": "I send a GET request to \"/pet/{id}\" using the created pet's ID",
             "match": {
-              "location": "src/steps/petstore.steps.ts:47"
+              "location": "src/steps/petstore.steps.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 308250832
+              "duration": 280876625
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
+            "line": 37,
             "name": "the response status code should be 404",
             "match": {
-              "location": "src/steps/petstore.steps.ts:103"
+              "location": "src/steps/petstore.steps.ts:78"
             },
             "result": {
               "status": "passed",
-              "duration": 1057875
+              "duration": 416624
             }
           },
           {
@@ -403,18 +403,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000333
+              "duration": 529875
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 35
+            "line": 31
           },
           {
             "name": "@regression",
-            "line": 35
+            "line": 31
           }
         ],
         "type": "scenario"
@@ -423,7 +423,7 @@
         "description": "",
         "id": "petstore-api---pet-crud-operations;tc-api-05---get-/pet/{id}---returns-404-for-non-existent-pet",
         "keyword": "Scenario",
-        "line": 44,
+        "line": 40,
         "name": "TC-API-05 - GET /pet/{id} - Returns 404 for non-existent pet",
         "steps": [
           {
@@ -431,46 +431,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 734709
+              "duration": 488707
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 45,
+            "line": 41,
             "name": "I send a GET request to \"/pet/999999999\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:58"
+              "location": "src/steps/petstore.steps.ts:52"
             },
             "result": {
               "status": "passed",
-              "duration": 273826791
+              "duration": 280685958
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 46,
+            "line": 42,
             "name": "the response status code should be 404",
             "match": {
-              "location": "src/steps/petstore.steps.ts:103"
+              "location": "src/steps/petstore.steps.ts:78"
             },
             "result": {
               "status": "passed",
-              "duration": 534665
+              "duration": 408625
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 47,
+            "line": 43,
             "name": "the response body should contain the message \"Pet not found\"",
             "match": {
-              "location": "src/steps/petstore.steps.ts:152"
+              "location": "src/steps/petstore.steps.ts:120"
             },
             "result": {
               "status": "passed",
-              "duration": 500542
+              "duration": 320959
             }
           },
           {
@@ -478,25 +478,25 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 819040
+              "duration": 623999
             }
           }
         ],
         "tags": [
           {
             "name": "@api",
-            "line": 43
+            "line": 39
           },
           {
             "name": "@regression",
-            "line": 43
+            "line": 39
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "petstore-api---pet-crud-operations",
-    "line": 5,
+    "line": 1,
     "keyword": "Feature",
     "name": "Petstore API - Pet CRUD Operations",
     "tags": [],

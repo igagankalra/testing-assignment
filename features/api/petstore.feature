@@ -1,7 +1,3 @@
-# Petstore REST API - Pet CRUD Operations
-# Endpoint: https://petstore.swagger.io/v2/pet
-# Status codes verified: 200 (success), 404 (not found)
-
 Feature: Petstore API - Pet CRUD Operations
   As a QA Engineer
   I want to automate the Pet endpoints on the Petstore Swagger API

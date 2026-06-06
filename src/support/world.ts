@@ -4,19 +4,15 @@ import { PetApiClient, ApiLogEntry } from '@api/PetApiClient';
 import { Pet } from '../types/petstore.types';
 import 'dotenv/config';
 
-// Trailing slash is required: Playwright resolves request paths via the URL
-// spec, so a base without trailing slash drops its last segment (e.g. /v2).
+// Trailing slash matters: Playwright joins paths via the URL spec,
+// so a base without it (e.g. /v2) drops its last segment.
 const DEFAULT_API_BASE_URL = 'https://petstore.swagger.io/v2/';
 
-// Shared state across Cucumber steps in a scenario
 export class CustomWorld extends World {
   apiContext!: APIRequestContext;
   client!: PetApiClient;
   apiLogs: ApiLogEntry[] = [];
-  lastResponse!: {
-    status: number;
-    body: unknown;
-  };
+  lastResponse!: { status: number; body: unknown };
   createdPet!: Pet;
 
   constructor(options: IWorldOptions) {
@@ -38,5 +34,4 @@ export class CustomWorld extends World {
   }
 }
 
-// Register our custom World so Cucumber uses it for all scenarios
 setWorldConstructor(CustomWorld);
